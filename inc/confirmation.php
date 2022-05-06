@@ -18,8 +18,7 @@
         </tr>
         <tr>
             <td>
-                <button type="submit" name="back">前に戻る</button>
-                <!-- <button onclick="history.go(-1);">前に戻る</button> -->
+                <button onclick="history.go(-1);">前に戻る</button>
             </td>
             <td>
                 <input type="submit" value="送信する" name="send_mail">
@@ -27,9 +26,3 @@
         </tr>
     </table>
 </form>
-
-<?php
-if (isset($_POST['back'])) {
-    header("Location:".$_SERVER['HTTP_REFERER']);
-}
-?>

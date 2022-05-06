@@ -2,7 +2,6 @@
 require __DIR__ . '/inc/header.php';
 
 $errors = [];
-$inputs = [];
 
 $request_method = strtoupper($_SERVER['REQUEST_METHOD']);
 

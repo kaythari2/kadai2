@@ -1,6 +1,8 @@
 <?php
 include 'util/basic_utilities.php';
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+ }
 
 const NAME_REQUIRED = '名前を入力してください。';
 const NAME_INVALID = '20文字を超えない名前お願いします。';
